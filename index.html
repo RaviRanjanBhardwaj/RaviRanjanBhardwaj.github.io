@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Restricts what this static page is allowed to load or talk to:
+         only this site's own bundled JS, Google Fonts, the one GitHub-hosted
+         screenshot, and the FormSubmit.co endpoint the contact form posts
+         to. Blocks any injected inline <script> outright. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://raw.githubusercontent.com; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; base-uri 'self'; object-src 'none';"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="description" content="Ravi Ranjan Bhardwaj: Automation & Robotics Engineer specializing in IoT, embedded systems, AI/ML and full-stack development." />
     <meta name="theme-color" content="#fbfaf7" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,8 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="/assets/profile-_BAOzN5X.jpg" />
     <title>Ravi Ranjan Bhardwaj · Automation & Robotics Engineer</title>
-    <script type="module" crossorigin src="/assets/index-6nwLKf8V.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-ufgAPrFA.css">
+    <script type="module" crossorigin src="/assets/index-CpCv16cM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DyaVpkg2.css">
   </head>
   <body>
     <div id="root"></div>
